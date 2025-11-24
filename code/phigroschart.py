@@ -1,4 +1,5 @@
 import os
+import sys
 
 def chart_mode1(name):
     file = open(name,mode='r',encoding="utf-8")
@@ -76,3 +77,5 @@ elif mode == "2":
         print(ans)
 else:
     print("Your input is error!")
+toexit = input("Press Enter to exit...")
+sys.exit(0)
