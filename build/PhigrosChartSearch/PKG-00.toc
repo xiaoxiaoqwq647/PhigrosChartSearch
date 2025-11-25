@@ -1,5 +1,5 @@
 ('D:\\Program '
- 'Files\\Python_Flies\\VisualStudioCode\\phigroschart_public\\build\\phigroschart\\phigroschart.pkg',
+ 'Files\\Python_Flies\\VisualStudioCode\\phigroschart_public\\build\\PhigrosChartSearch\\PhigrosChartSearch.pkg',
  {'BINARY': True,
   'DATA': True,
   'EXECUTABLE': True,
@@ -12,27 +12,27 @@
  [('pyi-contents-directory _internal', '', 'OPTION'),
   ('PYZ-00.pyz',
    'D:\\Program '
-   'Files\\Python_Flies\\VisualStudioCode\\phigroschart_public\\build\\phigroschart\\PYZ-00.pyz',
+   'Files\\Python_Flies\\VisualStudioCode\\phigroschart_public\\build\\PhigrosChartSearch\\PYZ-00.pyz',
    'PYZ'),
   ('struct',
    'D:\\Program '
-   'Files\\Python_Flies\\VisualStudioCode\\phigroschart_public\\build\\phigroschart\\localpycs\\struct.pyc',
+   'Files\\Python_Flies\\VisualStudioCode\\phigroschart_public\\build\\PhigrosChartSearch\\localpycs\\struct.pyc',
    'PYMODULE'),
   ('pyimod01_archive',
    'D:\\Program '
-   'Files\\Python_Flies\\VisualStudioCode\\phigroschart_public\\build\\phigroschart\\localpycs\\pyimod01_archive.pyc',
+   'Files\\Python_Flies\\VisualStudioCode\\phigroschart_public\\build\\PhigrosChartSearch\\localpycs\\pyimod01_archive.pyc',
    'PYMODULE'),
   ('pyimod02_importers',
    'D:\\Program '
-   'Files\\Python_Flies\\VisualStudioCode\\phigroschart_public\\build\\phigroschart\\localpycs\\pyimod02_importers.pyc',
+   'Files\\Python_Flies\\VisualStudioCode\\phigroschart_public\\build\\PhigrosChartSearch\\localpycs\\pyimod02_importers.pyc',
    'PYMODULE'),
   ('pyimod03_ctypes',
    'D:\\Program '
-   'Files\\Python_Flies\\VisualStudioCode\\phigroschart_public\\build\\phigroschart\\localpycs\\pyimod03_ctypes.pyc',
+   'Files\\Python_Flies\\VisualStudioCode\\phigroschart_public\\build\\PhigrosChartSearch\\localpycs\\pyimod03_ctypes.pyc',
    'PYMODULE'),
   ('pyimod04_pywin32',
    'D:\\Program '
-   'Files\\Python_Flies\\VisualStudioCode\\phigroschart_public\\build\\phigroschart\\localpycs\\pyimod04_pywin32.pyc',
+   'Files\\Python_Flies\\VisualStudioCode\\phigroschart_public\\build\\PhigrosChartSearch\\localpycs\\pyimod04_pywin32.pyc',
    'PYMODULE'),
   ('pyiboot01_bootstrap',
    'C:\\Users\\Xiaoxiaoqwq\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
@@ -40,9 +40,9 @@
   ('pyi_rth_inspect',
    'C:\\Users\\Xiaoxiaoqwq\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
    'PYSOURCE'),
-  ('phigroschart',
+  ('PhigrosChartSearch',
    'D:\\Program '
-   'Files\\Python_Flies\\VisualStudioCode\\phigroschart_public\\code\\phigroschart.py',
+   'Files\\Python_Flies\\VisualStudioCode\\phigroschart_public\\code\\PhigrosChartSearch.py',
    'PYSOURCE')],
  'python312.dll',
  True,
