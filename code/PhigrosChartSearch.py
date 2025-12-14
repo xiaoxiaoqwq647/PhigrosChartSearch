@@ -55,7 +55,7 @@ def chart_mode4(name):
     return notes_chart
 
 
-print("Phigros Chart Search V1.1.1")
+print("Phigros Chart Search V1.2.1")
 charts_directory = input("Please enter the directory of the charts(Empty input means current directory):")
 if charts_directory == "":
     charts_directory = os.getcwd()
