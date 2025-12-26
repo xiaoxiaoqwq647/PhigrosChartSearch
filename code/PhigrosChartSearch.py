@@ -3,7 +3,7 @@ import sys
 import json
 
 
-def chart_mode1(name):
+def chart_mode1(name):  #方法1：暴力遍历统计各音符数量，返回各音符数量列表，格式为[tap,drag,hold,flick]
     file = open(name,mode='r',encoding="utf-8")
     res = file.readline()
     notes_chart = [0,0,0,0]
@@ -16,7 +16,7 @@ def chart_mode1(name):
     return notes_chart
 
 
-def chart_mode2(name):
+def chart_mode2(name):  #方法2：暴力遍历统计总音符数量,返回总音符数量(int)
     file = open(name,mode='r',encoding="utf-8")
     res = file.readline()
     notes_chart = 0
@@ -28,7 +28,7 @@ def chart_mode2(name):
     return notes_chart
 
 
-def chart_mode3(name):
+def chart_mode3(name):  #方法3：使用JSON解析统计总音符数量,返回总音符数量(int)
     file = open(name,mode='r',encoding="utf-8")
     res = file.readline()
     notes_chart = 0
@@ -40,7 +40,7 @@ def chart_mode3(name):
     return notes_chart
 
 
-def chart_mode4(name):
+def chart_mode4(name):  #方法4：使用JSON解析统计各音符数量,返回各音符数量列表，格式为[tap,drag,hold,flick]
     file = open(name,mode='r',encoding="utf-8")
     res = file.readline()
     notes_chart = [0,0,0,0]
@@ -55,7 +55,7 @@ def chart_mode4(name):
     return notes_chart
 
 
-print("Phigros Chart Search V1.2.1")
+print("Phigros Chart Search V1.1.1")
 charts_directory = input("Please enter the directory of the charts(Empty input means current directory):")
 if charts_directory == "":
     charts_directory = os.getcwd()
@@ -95,8 +95,10 @@ if mode == "1":
         print("Please wait...(maybe more than 10 minutes)")
         list = os.listdir(path = charts_directory)
         for i in list:
+            charts_directory_one = charts_directory + "\\" + i
+            if os.path.isfile(charts_directory_one) == False: #判断是否为文件，若为文件夹则跳过当前循环
+                continue
             if difficulty in i:
-                charts_directory_one = charts_directory + "\\" + i
                 notes_true = chart_mode1(charts_directory_one)
                 if notes_input == notes_true:
                     ans.append(i)
@@ -119,8 +121,10 @@ elif mode == "2":
         difficulty = difficulty_dict[int(difficulty_num)]
         list = os.listdir(path = charts_directory)
         for i in list:
+            charts_directory_one = charts_directory + "\\" + i
+            if os.path.isfile(charts_directory_one) == False:  #判断是否为文件，若为文件夹则跳过当前循环
+                continue
             if difficulty in i:
-                charts_directory_one = charts_directory + "\\" + i
                 notes_true = chart_mode2(charts_directory_one)
                 if notes_input == notes_true:
                     ans.append(i)
@@ -143,8 +147,10 @@ elif mode == "3":
         difficulty = difficulty_dict[int(difficulty_num)]
         list = os.listdir(path = charts_directory)
         for i in list:
+            charts_directory_one = charts_directory + "\\" + i
+            if os.path.isfile(charts_directory_one) == False:  #判断是否为文件，若为文件夹则跳过当前循环
+                continue
             if difficulty in i:
-                charts_directory_one = charts_directory + "\\" + i
                 notes_true = chart_mode3(charts_directory_one)
                 if notes_input == notes_true:
                     ans.append(i)
@@ -171,8 +177,10 @@ elif mode == "4":
         print("Please wait...(maybe more than 1 minutes)")
         list = os.listdir(path = charts_directory)
         for i in list:
+            charts_directory_one = charts_directory + "\\" + i
+            if os.path.isfile(charts_directory_one) == False:  #判断是否为文件，若为文件夹则跳过当前循环
+                continue
             if difficulty in i:
-                charts_directory_one = charts_directory + "\\" + i
                 notes_true = chart_mode4(charts_directory_one)
                 if notes_input == notes_true:
                     ans.append(i)
