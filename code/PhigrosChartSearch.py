@@ -55,7 +55,7 @@ def chart_mode4(name):  #方法4：使用JSON解析统计各音符数量,返回�
     return notes_chart
 
 
-print("Phigros Chart Search V1.1.1")
+print("Phigros Chart Search V1.2.2")
 charts_directory = input("Please enter the directory of the charts(Empty input means current directory):")
 if charts_directory == "":
     charts_directory = os.getcwd()
