@@ -52,7 +52,7 @@ if mode == "1":
                     elif isinstance(e, json.JSONDecodeError):
                         print(f"Warning: A JSONDecodeError occurred while processing '{achart_dir}'. Maybe it's not a valid chart file. Skipping this chart.")
                     elif isinstance(e, KeyError):
-                        print(f"Warning: A KeyError occurred while processing '{achart_dir}'. The file does not contain 'judgeLineList'. Maybe it's not a valid chart file. Skipping this chart.")
+                        print(f"Warning: A KeyError occurred while processing '{achart_dir}'. The file may not contain 'judgeLineList' or other required keys. Maybe it's not a valid chart file. Skipping this chart.")
                     continue
                 if achart_input.notes_achart == achart_search.notes_achart:
                     ans.append(achart_dir)
@@ -95,7 +95,7 @@ elif mode == "2":
                     elif isinstance(e, json.JSONDecodeError):
                         print(f"Warning: A JSONDecodeError occurred while processing '{achart_dir}'. Maybe it's not a valid chart file. Skipping this chart.")
                     elif isinstance(e, KeyError):
-                        print(f"Warning: A KeyError occurred while processing '{achart_dir}'. The file does not contain 'judgeLineList'. Maybe it's not a valid chart file. Skipping this chart.")
+                        print(f"Warning: A KeyError occurred while processing '{achart_dir}'. The file may not contain 'judgeLineList' or other required keys. Maybe it's not a valid chart file. Skipping this chart.")
                     continue
                 if achart_input.notes_total == achart_search.notes_total:
                     ans.append(achart_dir)
