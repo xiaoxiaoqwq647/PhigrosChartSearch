@@ -1,7 +1,7 @@
 import chart_search_lib
 import json
 
-print("Phigros Chart Search V1.3.0")
+print("Phigros Chart Search V1.3.1")
 print("Please enter the directory of the charts(Empty input means current directory):", end="")
 charts_directory = chart_search_lib.ChartsDirectory(input())
 charts_directory.charts_directory_check()
